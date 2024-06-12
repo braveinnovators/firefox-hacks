@@ -115,3 +115,21 @@ Color management allows images and colors to be displayed consistently across a 
 `1` -> Enable color management for rendered graphics
 
 `2` -> Enable color management for tagged graphics only (Default)
+
+## Extensions (Add-ons for Firefox)
+
+#### uBlock Origin
+
+[uBlock Origin](https://addons.mozilla.org/en-US/firefox/addon/ublock-origin/) (uBO) is a free and open-source browser extension for content filtering, including ad blocking. Out of the box, uBO blocks ads, trackers, coin miners, popups, etc.
+
+#### Facebook Container
+
+[Facebook Container](https://addons.mozilla.org/en-US/firefox/addon/facebook-container/) works by isolating your Facebook identity into a separate container that makes it harder for Facebook to track your visits to other websites with third-party cookies.
+
+#### DuckDuckGo Privacy Essentials
+
+[DuckDuckGo Privacy Essentials](https://addons.mozilla.org/en-US/firefox/addon/duckduckgo-for-firefox/) provides simple and seamless privacy protection for your browser: tracker blocking, cookie protection, DuckDuckGo private search, email protection, HTTPS upgrading, and much more.
+
+#### SingleFile
+
+[SingleFile](https://addons.mozilla.org/en-US/firefox/addon/single-file/) is an add-on for Firefox Desktop and Mobile that helps you to save an entire webpage including images, styling, frames, fonts etc. as a single HTML file.
