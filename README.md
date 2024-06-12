@@ -1,6 +1,14 @@
 # Firefox: hacks, tweaks, and productivity enhancements
 
-Below are a few of our favorite Firefox hacks, tweaks, and productivity enhancements that can be made via [Configuration Editor](https://support.mozilla.org/en-US/kb/about-config-editor-firefox) (about:config page).
+Below are some of our favorite Firefox hacks, tweaks, and productivity enhancements that can be done via [Configuration Editor](https://support.mozilla.org/en-US/kb/about-config-editor-firefox) (about:config page) and by installing third-party extensions (add-ons for Firefox).
+
+* [Security](#security)
+* [Privacy](#privacy)
+* [Telemetry](#telemetry)
+* [DOM](#dom)
+* [UI](#ui)
+* [ICC color correction](#icc-color-correction)
+* [Extensions (Add-ons for Firefox)](#extensions-add-ons-for-firefox)
 
 ## Security
 
@@ -10,7 +18,7 @@ Below are a few of our favorite Firefox hacks, tweaks, and productivity enhancem
 
 #### Fingerprinting
 
-Firefox already has an Enhanced Tracking Protection feature that blocks a list of known "fingerprinters" when your privacy settings are set to Standard (the default) or Strict, whereas [Fingerprinting Protection](https://support.mozilla.org/en-US/kb/firefox-protection-against-fingerprinting) is a different, experimental feature under heavy development in Firefox
+Firefox already has an Enhanced Tracking Protection feature that blocks a list of known "fingerprinters" when your privacy settings are set to Standard (the default) or Strict, whereas [Fingerprinting Protection](https://support.mozilla.org/en-US/kb/firefox-protection-against-fingerprinting) is a different, experimental feature under heavy development in Firefox.
 
 `privacy.resistFingerprinting` => `true`
 
@@ -18,7 +26,7 @@ Firefox already has an Enhanced Tracking Protection feature that blocks a list o
 
 #### Punycode
 
-Enable IDN [Punycode](https://kb.mozillazine.org/Network.IDN_show_punycode) (display the "raw", punycode version of internationalized domain names)
+Enable IDN [Punycode](https://kb.mozillazine.org/Network.IDN_show_punycode) (display the "raw", punycode version of internationalized domain names).
 
 `network.IDN_show_punycode` => `true`
 
@@ -36,29 +44,29 @@ Enable Container Tabs and its UI setting. [Firefox containers](https://support.m
 
 #### Geolocation
 
-Disable Geolocation Tracking
+Disable Geolocation Tracking.
 
 `geo.enabled` => `false`
 
 #### Widevine
 
-Disables the Widevine Content Decryption Module provided by Google
+Disables the Widevine Content Decryption Module provided by Google.
 
 `media.gmp-widevinecdm.enabled` => `false`
 
 #### Pocket
 
-Disable Pocket integration
+Disable Pocket integration.
 
 `extensions.pocket.enabled` => `false`
 
 ## Telemetry
 
-This is the data submission master [kill switch](https://firefox-source-docs.mozilla.org/toolkit/components/telemetry/internals/preferences.html): if disabled, no policy is shown or upload takes place.
+This is the data submission master [kill switch](https://firefox-source-docs.mozilla.org/toolkit/components/telemetry/internals/preferences.html) (if disabled, no policy is shown or upload takes place).
 
 `datareporting.policy.dataSubmissionEnabled` => `false`
 
-Disable recommendations in about:addons' Extensions and Themes panes
+Disable recommendations in about:addons' Extensions and Themes panes.
 
 `extensions.htmlaboutaddons.recommendations.enabled` => `false`
 
@@ -66,55 +74,57 @@ Disable recommendations in about:addons' Extensions and Themes panes
 
 #### Context menu
 
-Web pages won't be allowed to manipulate or block the context menu
+Web pages won't be allowed to manipulate or block the context menu.
 
 `dom.event.contextmenu.enabled` => `false`
 
 #### Resizing windows
 
-Prevent scripts from moving and resizing open windows
+Prevent scripts from moving and resizing open windows.
 
 `dom.disable_window_move_resize` => `false`
 
 ## UI
 
-#### Compact mode workaround in Firefox
+#### Compact Density
 
-Starting with Firefox 89, the Compact Density option is hidden by default in Menu > Customize toolbar... The following settings will help you get this option back.
+For anyone wishing to maximize the amount of space available for web content in their browser, Firefox offers a useful "Compact density" option, which reduces the size of the user interface. However, starting with Firefox 89, this option is hidden by default. The following settings will help you get this option back.
 
 `browser.compactmode.show` => `true`
 
-Next step: More tools -> Customize toolbar... -> Density -> Compact (not supported)
+Next step: More tools -> Customize toolbar... -> Density -> Compact (not supported).
 
 #### Bookmarks
 
-Open bookmarks in a new tab (rather than existing window)
+Open bookmarks in a new tab (rather than existing window).
 
 `browser.tabs.loadBookmarksInTabs` => `true`
 
 #### Closing last tab
 
-Prevent Firefox from exiting when you close the last tab
+Prevent Firefox from exiting when you close the last tab.
 
 `browser.tabs.closeWindowWithLastTab` => `false`
 
 #### View Source
 
-This preference controls whether lines in View Source that are too long to fit the window will wrap to the next line or cause a horizontal scroll bar
+This preference controls whether lines in View Source that are too long to fit the window will wrap to the next line or cause a horizontal scroll bar.
 
 `view_source.wrap_long_lines` => `true`
 
-## Color correction
+## ICC color correction
 
-Color management allows images and colors to be displayed consistently across a variety of devices. Mozilla recognizes embedded ICC profiles in image files and uses a local color profile to perform the color adjustments. This preference determines if Mozilla should make these adjustments.
+Color management allows images and colors to be displayed consistently across a variety of devices. [Firefox recognizes](https://developer.mozilla.org/en-US/docs/Mozilla/Firefox/Releases/3.5/ICC_color_correction_in_Firefox) embedded ICC profiles in image files and uses a local color profile to perform the color adjustments.
 
-`gfx.color_management.mode`
+Color correction can be controlled by setting the value of the `gfx.color_management.mode` preference, as follows:
 
 `0` -> Disable color management
 
 `1` -> Enable color management for rendered graphics
 
 `2` -> Enable color management for tagged graphics only (Default)
+
+Full color management means that everything rendered by Firefox, with the exception of plugins, has its colors corrected.
 
 ## Extensions (Add-ons for Firefox)
 
