@@ -18,7 +18,7 @@ Firefox already has an Enhanced Tracking Protection feature that blocks a list o
 
 #### Punycode
 
-Enable IDN Punycode (display the "raw", punycode version of internationalized domain names)
+Enable IDN [Punycode](https://kb.mozillazine.org/Network.IDN_show_punycode) (display the "raw", punycode version of internationalized domain names)
 
 `network.IDN_show_punycode` => `true`
 
