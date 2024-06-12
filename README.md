@@ -2,6 +2,14 @@
 
 Below are some of our favorite Firefox hacks, tweaks, and productivity enhancements that can be done via [Configuration Editor](https://support.mozilla.org/en-US/kb/about-config-editor-firefox) (about:config page) and by installing third-party extensions (add-ons for Firefox).
 
+* [Security](#security)
+* [Privacy](#privacy)
+* [Telemetry](#telemetry)
+* [DOM](#dom)
+* [UI](#ui)
+* [ICC color correction](#icc-color-correction)
+* [Extensions (Add-ons for Firefox)](#extensions-add-ons-for-firefox)
+
 ## Security
 
 #### Disable WebRTC
